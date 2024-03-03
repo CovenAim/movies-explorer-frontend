@@ -1,0 +1,390 @@
+.about-project__details {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    align-self: stretch;
+    justify-content: flex-start;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 98px;
+    margin: 0 0 0;
+    background:#FFFFFF;
+}
+
+.about-project__description-header {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.about-project__header-title {
+    flex: 0 0 auto;
+    font: 400 22px Inter;
+    color: #000000;
+    letter-spacing: -0.88px;
+    white-space: pre-wrap;
+    margin-top: 111px;
+    margin-bottom: 0px;
+}
+
+.about-project__line {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 1140px;
+    height: 1px;
+    margin-top: 23px;
+    background: #000000;
+}
+
+.about-project__details-content {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.about-project__details-block {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.about-project__details-text {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 50.44%;
+    font: 400 20px Inter;
+    color: #000000;
+    letter-spacing: -0.8px;
+    white-space: pre-wrap;
+}
+
+.about-project__details-duration {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    width: 49.56%;
+    padding-right: 15px;
+    padding-left: 15px;
+    font: 400 20px Inter;
+    color: #000000;
+    letter-spacing: -0.8px;
+    white-space: pre-wrap;
+}
+
+.about-project__details-description {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0 0 95px;
+}
+
+.about-project__description-text {
+    box-sizing: border-box;
+    flex: 1 1 0;
+    max-width: 550px;
+    font: 400 14px/20px Inter;
+    color: #000000;
+    text-align: left;
+    white-space: pre-wrap;
+    margin-top: 5.5px;
+}
+
+.about-project__description-notes {
+    box-sizing: border-box;
+    flex: 1 1 0;
+    max-width: 550px;
+    margin-left: 40px;
+    font: 400 14px/20px Inter;
+    color: #000000;
+    text-align: left;
+    white-space: pre-wrap;
+    margin-top: 5.5px;
+}
+
+.about-project__timeline {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.about-project__flex-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 0 228px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.about-project__week-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 36px;
+    padding-right: 14px;
+    padding-left: 14px;
+    background: #000000;
+}
+
+.about-project__week-text {
+    flex: 0 0 auto;
+    font: 400 14px Inter;
+    color: #FFFFFF;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.about-project__backend-title {
+    flex: 0 0 auto;
+    padding-right: 14px;
+    padding-left: 14px;
+    margin-top: 14px;
+    font: 500 14px Inter;
+    color: rgba(139, 139, 139, 1);
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.about-project__flex-container-large {
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 0 912px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.about-project__weeks-container {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    height: 36px;
+    padding-right: 356px;
+    padding-left: 356px;
+    background: #F2F2F2;
+}
+
+.about-project__weeks-duration {
+    flex: 0 0 auto;
+    font: 400 14px Inter;
+    color: #000000;
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+.about-project__weeks-text {
+    flex: 0 0 auto;
+    margin-top: 14px;
+    font: 500 14px Inter;
+    color: rgba(139, 139, 139, 1);
+    text-align: center;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 1270px) {
+    .about-project__line {
+        width: auto;
+    }
+}
+
+@media (max-width: 780px) {
+    .about-project__flex-container {
+        max-width: 140px;
+    }
+
+    .about-project__weeks-container {
+        min-width: 528px;
+        padding: 0;
+    }
+
+    .about-project__flex-container-large {
+        min-width: 528px;
+    }
+
+    .about-project__header-title {
+        margin-top: 91px;
+    }
+
+    .about-project__details-content {
+        margin-top: 52px;
+    }
+
+    .about-project__description-text, .about-project__description-notes {
+        font-size: 12px;
+    }
+
+    .about-project__details {
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+
+    .about-project__details-duration {
+        padding-right: 0;
+    }
+
+    .about-project__details-description {
+        margin-bottom: 75px;
+    }
+
+    .about-project__details-block {
+        line-height: 1.05;
+    }
+
+    .about-project__details-text {
+        font-size: 20px;
+        letter-spacing: -4%;
+        margin: 18px 0 16px 0;
+    }
+
+    .about-project__details-duration {
+        font-size: 20px;
+        letter-spacing: -4%;
+        padding-left: 11px;
+        margin: 18px 0 16px 0;
+    }
+
+    .about-project__description-text {
+        margin-top: 4.5px;
+    }
+
+    .about-project__description-notes {
+        margin-top: 4.5px;
+        margin-left: 30px;
+    }
+}
+
+
+
+@media (max-width: 740px) {
+    .about-project__details {
+        margin: 70px 18px;
+        padding: 0;
+    }
+
+    .about-project__header-title {
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    .about-project__details-content {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+
+    .about-project__details-block, .about-project__details-description {
+        display: contents;
+    }
+
+    .about-project__details-text {
+        order: 1;
+        font-size: 18px;
+        letter-spacing: 4%;
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .about-project__description-text {
+        order: 2;
+        font-size: 11px;
+        margin-bottom: 56px;
+    }
+
+    .about-project__details-duration {
+        order: 3;
+        font-size: 18px;
+        width: 100%;
+        padding: 0;
+        margin-top: 0px;
+        margin-bottom: 16px;
+    }
+
+    .about-project__description-notes {
+        order: 4;
+        font-size: 11px;
+        margin: 0;
+        margin-bottom: 60px;
+    }
+
+    .about-project__timeline {
+        grid-template-columns: 100px 1fr;
+    }
+
+    .about-project__backend-title, .about-project__backend-text, .about-project__frontend-title, 
+    .about-project__frontend-text, .about-project__frontend-duration, .about-project__weeks-text {
+        font-size: 11px;
+    }
+
+    .about-project__flex-container {
+        max-width: 140px;
+    }
+
+    .about-project__weeks-container {
+        min-width: 528px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 340px) {
+    .about-project__details {
+        margin: 73px 18px 52px 18px;
+        padding: 0;
+    }
+
+    .about-project__line {
+        margin-top: 27px;
+    }
+
+    .about-project__details-content {
+        margin-top: 46px;
+    }
+
+    .about-project__description-text {
+        margin-top: 0px;
+        margin-bottom: 59px;
+        line-height: 1.3;
+    }
+
+    .about-project__description-notes {
+        line-height: 1.5;
+        margin-bottom: 57px;
+    }
+
+    .about-project__timeline{
+        width: auto;
+    }
+
+    .about-project__flex-container {
+        max-width: 100px;
+    }
+
+    .about-project__week-container {
+        margin-top: 3px;
+    }
+
+    .about-project__weeks-container {
+        min-width: 184px;
+        padding: 0;
+    }
+
+    .about-project__flex-container-large {
+        min-width: 184px;
+    }
+}
