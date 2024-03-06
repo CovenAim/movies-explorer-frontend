@@ -1,3 +1,4 @@
+import React from 'react';
 import "../Promo/Promo.css";
 import NavTab from "../NavTab/NavTab";
 import landingLogo from "../../images/landing-logo.svg"

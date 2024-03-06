@@ -26,7 +26,7 @@ function Header() {
   }
 
   return (
-    <div className={`header ${isMainPage ? "main-page-header" : ""}`}>
+    <header className={`header ${isMainPage ? "main-page-header" : ""}`}>
       <div className="header__logo">
         <Link to="/">
           <img src={logo} className="header__logo-image" alt="Logo" />
@@ -66,7 +66,7 @@ function Header() {
           </div>
         </>
       )}
-    </div>
+    </header>
   );
 }
 

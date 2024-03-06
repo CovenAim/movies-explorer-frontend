@@ -74,6 +74,10 @@
   .promo-info {
     padding-top: 0;
   }
+
+  .search-form__icon-landing {
+    margin-top: 5px;
+  }
 }
 
 @media (max-width: 500px) {

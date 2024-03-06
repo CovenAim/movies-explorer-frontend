@@ -1,3 +1,4 @@
+import React from 'react';
 import searchButton from "../../images/find.svg"
 import magnifierIcon from "../../images/magnifier.svg"
 import "../SearchForm/SearchForm.css"
@@ -31,7 +32,7 @@ function SearchForm() {
               </div>
             </div>
           </div>
-          <div class="search-form__line"></div>
+          <div class="search-form-line"></div>
         </>
       );
     }

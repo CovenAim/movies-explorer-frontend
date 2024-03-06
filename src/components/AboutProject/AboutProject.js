@@ -1,3 +1,4 @@
+import React from 'react';
 import "../AboutProject/AboutProject.css"
 
 function AboutProject() {

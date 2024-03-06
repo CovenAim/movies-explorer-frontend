@@ -1,3 +1,4 @@
+import React from 'react';
 import "../Register/Register.css";
 import logo from "../../images/logo.svg";
 

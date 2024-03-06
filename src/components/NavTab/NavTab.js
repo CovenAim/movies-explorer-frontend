@@ -1,3 +1,4 @@
+import React from 'react';
 import "../NavTab/NavTab.css";
 
 function NavTab() {

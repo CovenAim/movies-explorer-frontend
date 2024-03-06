@@ -1,3 +1,4 @@
+import React from 'react';
 import "../Navigation/Navigation.css"
 import otherLogoAcc from "../../images/otherLogoAcc.svg";
 

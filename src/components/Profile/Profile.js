@@ -1,3 +1,4 @@
+import React from 'react';
 import "../Profile/Profile.css"
 
 function Profile() {
@@ -17,8 +18,8 @@ function Profile() {
                     </div>
                 </div>
                 <div className="account-actions">
-                    <p className="edit-button">Редактировать</p>
-                    <p className="logout-button">Выйти из аккаунта</p>
+                    <a href="#edit" className="edit-button">Редактировать</a>
+                    <a href="#logout" className="logout-button">Выйти из аккаунта</a>
                 </div>
             </div>
         </div>

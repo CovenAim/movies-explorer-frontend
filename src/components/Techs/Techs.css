@@ -6,7 +6,7 @@
     align-items: center;
     align-self: stretch;
     justify-content: center;
-    padding: 58px 70px;
+    padding: 58px 70px 100px 70px;
     background: #F5F5F5;
   }
   .techs__content {

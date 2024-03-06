@@ -1,3 +1,4 @@
+import React from 'react';
 import "../Techs/Techs.css";
 
 function Techs() {

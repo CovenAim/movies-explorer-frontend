@@ -136,7 +136,7 @@
 @media (max-width: 780px) {
   .header {
     padding: 17px 31px 18px 31px;
-    width: 708px;
+    max-width: 780px;
   }
 
   .header-mobile__burger {
@@ -201,7 +201,7 @@
 
 @media (max-width: 340px) {
   .header {
-    width: 289px;
+    max-width: 340px;
     margin: 0px;
     max-height: 74px;
     padding: 17px 17px 15px 14px;
