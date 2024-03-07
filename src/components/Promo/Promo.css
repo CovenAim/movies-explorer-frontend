@@ -16,7 +16,7 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     max-width: 730px;
-    font: 500 49.2px/60px Inter;
+    font: 500 49.2px/60px Inter, Arial, sans-serif;
     color: #000;
     text-align: center;
     letter-spacing: -2px;

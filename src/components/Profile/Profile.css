@@ -11,7 +11,7 @@
   }
   .greeting-heading {
     flex: 0 0 auto;
-    font: 500 24px Inter;
+    font: 500 24px Inter, Arial, sans-serif;
     color: #000000;
     white-space: pre-wrap;
   }
@@ -41,13 +41,13 @@
   }
   .name-text {
     flex: 0 0 auto;
-    font: 500 11px Inter;
+    font: 500 11px Inter, Arial, sans-serif;
     color: #000000;
     white-space: pre-wrap;
   }
   .name-paragraph {
     flex: 0 0 auto;
-    font: 400 11px Inter;
+    font: 400 11px Inter, Arial, sans-serif;
     color: #000000;
     white-space: pre-wrap;
   }

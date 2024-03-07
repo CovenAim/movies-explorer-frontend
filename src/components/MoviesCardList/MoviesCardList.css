@@ -14,7 +14,7 @@
     width: 320px;
     min-width: 320px;
     height: 36px;
-    font: 500 12px Inter;
+    font: 500 12px Inter, Arial, sans-serif;
     color: #000000;
     cursor: pointer;
     background: #F9F9F9;

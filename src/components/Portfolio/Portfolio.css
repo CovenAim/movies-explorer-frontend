@@ -7,7 +7,7 @@
 }
 
 .portfolio__heading {
-    font: 400 18px Inter;
+    font: 400 18px Inter, Arial, sans-serif;
     color: rgba(139, 139, 139, 1);
     white-space: pre-wrap;
 }
@@ -30,7 +30,7 @@
 }
 
 .portfolio__project-title {
-    font: 400 30px Inter;
+    font: 400 30px Inter, Arial, sans-serif;
     color: #000000;
     letter-spacing: -1.2px;
     white-space: pre-wrap;
@@ -39,7 +39,7 @@
 }
 
 .portfolio__project-link {
-    font: 400 30px Inter;
+    font: 400 30px Inter, Arial, sans-serif;
     color: #000000;
     letter-spacing: -1.2px;
     white-space: pre-wrap;

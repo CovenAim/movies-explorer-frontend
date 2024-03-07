@@ -23,7 +23,7 @@
     flex: 0 0 auto;
     height: 72px;
     padding-left: 11px;
-    font: 400 18px Inter;
+    font: 400 18px Inter, Arial, sans-serif;
     background: #FDFDFD;
     border: none;
     border-radius: 8px;
@@ -98,7 +98,7 @@
 .search-form__label {
     flex: 0 0 auto;
     margin-left: 13px;
-    font: 400 12px Inter;
+    font: 400 12px Inter, Arial, sans-serif;
     color: rgba(255, 255, 255, 1);
     white-space: pre-wrap;
 }

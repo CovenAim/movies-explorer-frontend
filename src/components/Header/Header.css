@@ -87,7 +87,7 @@
 
 .header__movie-link {
   flex: 0 0 auto;
-  font: 400 14px Inter;
+  font: 400 14px Inter, Arial, sans-serif;
   color: #000;
   white-space: pre-wrap;
   text-decoration: none;
@@ -96,7 +96,7 @@
 .header__movie-link_saved {
   flex: 0 0 auto;
   margin-left: 19px;
-  font: 400 14px Inter;
+  font: 400 14px Inter, Arial, sans-serif;
   color: #000;
   white-space: pre-wrap;
   text-decoration: none;

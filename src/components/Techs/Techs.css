@@ -22,7 +22,7 @@
   .techs__subtitle {
     flex: 0 0 auto;
     align-self: stretch;
-    font: 400 50px Inter;
+    font: 400 50px Inter, Arial, sans-serif;
     color: #000000;
     text-align: center;
     letter-spacing: -2px;
@@ -47,7 +47,7 @@
     width: 90px;
     min-width: 90px;
     height: 60px;
-    font: 400 14px Inter;
+    font: 400 14px Inter, Arial, sans-serif;
     color: #000000;
     letter-spacing: -0.56px;
     cursor: pointer;
@@ -65,7 +65,7 @@
   }
   .techs__header-title {
     flex: 0 0 auto;
-    font: 400 22px Inter;
+    font: 400 22px Inter, Arial, sans-serif;
     color: #000000;
     letter-spacing: -0.88px;
     white-space: pre-wrap;
@@ -90,7 +90,7 @@
   .techs__description-text {
     box-sizing: border-box;
     max-width: 460px;
-    font: 400 14px/20px Inter;
+    font: 400 14px/20px Inter, Arial, sans-serif;
     color: #000000;
     text-align: center;
     letter-spacing: -0.56px;

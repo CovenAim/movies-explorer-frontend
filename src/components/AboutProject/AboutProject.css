@@ -22,7 +22,7 @@
 
 .about-project__header-title {
     flex: 0 0 auto;
-    font: 400 22px Inter;
+    font: 400 22px Inter, Arial, sans-serif;
     color: #000000;
     letter-spacing: -0.88px;
     white-space: pre-wrap;
@@ -60,7 +60,7 @@
     box-sizing: border-box;
     flex: 0 0 auto;
     width: 50.44%;
-    font: 400 20px Inter;
+    font: 400 20px Inter, Arial, sans-serif;
     color: #000000;
     letter-spacing: -0.8px;
     white-space: pre-wrap;
@@ -72,7 +72,7 @@
     width: 49.56%;
     padding-right: 15px;
     padding-left: 15px;
-    font: 400 20px Inter;
+    font: 400 20px Inter, Arial, sans-serif;
     color: #000000;
     letter-spacing: -0.8px;
     white-space: pre-wrap;
@@ -91,7 +91,7 @@
     box-sizing: border-box;
     flex: 1 1 0;
     max-width: 550px;
-    font: 400 14px/20px Inter;
+    font: 400 14px/20px Inter, Arial, sans-serif;
     color: #000000;
     text-align: left;
     white-space: pre-wrap;
@@ -103,7 +103,7 @@
     flex: 1 1 0;
     max-width: 550px;
     margin-left: 40px;
-    font: 400 14px/20px Inter;
+    font: 400 14px/20px Inter, Arial, sans-serif;
     color: #000000;
     text-align: left;
     white-space: pre-wrap;
@@ -144,7 +144,7 @@
 
 .about-project__week-text {
     flex: 0 0 auto;
-    font: 400 14px Inter;
+    font: 400 14px Inter, Arial, sans-serif;
     color: #FFFFFF;
     text-align: center;
     white-space: pre-wrap;
@@ -152,11 +152,9 @@
 
 .about-project__backend-title {
     flex: 0 0 auto;
-    /* padding-right: 14px;
-    padding-left: 14px; */
     max-width: 228px;
     margin-top: 14px;
-    font: 500 14px Inter;
+    font: 500 14px Inter, Arial, sans-serif;
     color: rgba(139, 139, 139, 1);
     text-align: center;
     white-space: pre-wrap;
@@ -179,15 +177,12 @@
     align-items: stretch;
     justify-content: center;
     height: 36px;
-    /* max-width: 761px; */
-    /* padding-right: 356px;
-    padding-left: 356px; */
     background: #F2F2F2;
 }
 
 .about-project__weeks-duration {
     flex: 0 0 auto;
-    font: 400 14px Inter;
+    font: 400 14px Inter, Arial, sans-serif;
     color: #000000;
     text-align: center;
     white-space: pre-wrap;
@@ -196,7 +191,7 @@
 .about-project__weeks-text {
     flex: 0 0 auto;
     margin-top: 14px;
-    font: 500 14px Inter;
+    font: 500 14px Inter, Arial, sans-serif;
     color: rgba(139, 139, 139, 1);
     text-align: center;
     white-space: pre-wrap;

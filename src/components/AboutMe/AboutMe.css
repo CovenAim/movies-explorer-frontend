@@ -16,7 +16,7 @@
 }
 
 .about-me__title {
-    font: 400 22px Inter;
+    font: 400 22px Inter, Arial, sans-serif;
     color: #000000;
     letter-spacing: -0.88px;
     white-space: pre-wrap;
@@ -48,7 +48,7 @@
 }
 
 .about-me__name {
-    font: 400 50px Inter;
+    font: 400 50px Inter, Arial, sans-serif;
     color: #000000;
     letter-spacing: -2px;
     white-space: pre-wrap;
@@ -65,7 +65,7 @@
 }
 
 .about-me__profession {
-    font: 500 18px Inter;
+    font: 500 18px Inter, Arial, sans-serif;
     color: #000000;
     white-space: pre-wrap;
     margin-top: 17px;
@@ -73,7 +73,7 @@
 
 .about-me__text {
     margin-top: 6px;
-    font: 400 14px/22px Inter;
+    font: 400 14px/22px Inter, Arial, sans-serif;
     color: #000000;
     text-align: left;
     white-space: pre-wrap;
@@ -83,7 +83,7 @@
 
 .about-me__github-link {
     margin-top: 84px;
-    font: 500 14px Inter;
+    font: 500 14px Inter, Arial, sans-serif;
     color: #000000;
     white-space: pre-wrap;
     text-decoration: none;
