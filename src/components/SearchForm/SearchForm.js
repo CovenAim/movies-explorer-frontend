@@ -14,7 +14,7 @@ function SearchForm() {
                   <img
                       src={ searchButton }
                       className="search-form__icon"
-                      alt="Search Icon"
+                      alt="Иконка поиска"
                   />
                 </button>
              
@@ -27,7 +27,7 @@ function SearchForm() {
               <img
                       src={ magnifierIcon }
                       className="search-form__icon-magnifier"
-                      alt="Magnifier Icon"
+                      alt="Иконка лупы"
                   />
               </div>
             </div>

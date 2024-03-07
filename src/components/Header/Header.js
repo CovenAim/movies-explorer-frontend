@@ -29,7 +29,7 @@ function Header() {
     <header className={`header ${isMainPage ? "main-page-header" : ""}`}>
       <div className="header__logo">
         <Link to="/">
-          <img src={logo} className="header__logo-image" alt="Logo" />
+          <img src={logo} className="header__logo-image" alt="Лого" />
         </Link>
       </div>
       {shouldRenderHeader && (
@@ -42,7 +42,7 @@ function Header() {
               </div>
               <Link to="/profile" className="header__profile-link">
                 <button className="header__profile-button">
-                  <img src={isMainPage ? logoAcc : otherLogoAcc} className="header__logo-account" alt="Account Logo" />
+                  <img src={isMainPage ? logoAcc : otherLogoAcc} className="header__logo-account" alt="Лого аккаунт" />
                 </button>
               </Link>
             </div>

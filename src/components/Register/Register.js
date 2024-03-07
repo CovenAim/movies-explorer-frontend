@@ -7,7 +7,7 @@ function Register() {
         <div className="register">
             <div className="register__welcome">
                 <a href="/" className="register__logo-link">
-                    <img src={logo} className="register__logo" alt="logo" />
+                    <img src={logo} className="register__logo" alt="Лого" />
                 </a>
                 <p className="register__message">Добро пожаловать!</p>
             </div>

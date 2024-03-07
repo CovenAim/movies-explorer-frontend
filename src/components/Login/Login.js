@@ -7,7 +7,7 @@ function Login() {
     return (
         <div className="login">
             <Link to="/">
-                <img src={logo} className="login__logo" alt="Logo" />
+                <img src={logo} className="login__logo" alt="Лого" />
             </Link>
             <p className="login__welcome-message">Рады видеть!</p>
             <div className="login__form-container">

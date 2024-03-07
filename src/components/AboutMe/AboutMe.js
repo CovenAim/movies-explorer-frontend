@@ -22,7 +22,7 @@ function AboutMe() {
             <a href="https://github.com/CovenAim" target="_blank" rel="noreferrer" className="about-me__github-link">Github</a>
           </div>
           
-            <img src={me} className="about-me__image" alt="Me" />
+            <img src={me} className="about-me__image" alt="Мое фото" />
           
         </div>
         <Portfolio />

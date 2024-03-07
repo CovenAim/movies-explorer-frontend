@@ -11,7 +11,7 @@ function Promo() {
       <img
                       src={ landingLogo }
                       className="search-form__icon-landing"
-                      alt="landing Logo"
+                      alt="Лого"
                   />
         <p className="promo-info__title">Учебный проект студента факультета Веб-разработки.</p>
         <NavTab />

@@ -28,7 +28,7 @@ function MovieCard() {
     return (
         <>
             <div className="movies-list__container">
-                <img className="movies-list__image-container" src={ words } alt="33 Words" />
+                <img className="movies-list__image-container" src={ words } alt="33 слова" />
                 <div className="movies-list__title-container">
                     <p className="movies-list__title">33 слова о дизайне</p>
                     <p className="movies-list__duration-button">1ч 17м</p>
@@ -45,7 +45,7 @@ function MovieCard() {
                 )}
             </div>
             <div className="movies-list__container">
-                <img className="movies-list__image-container" src={ yearsofdesign } alt="33 Words" />
+                <img className="movies-list__image-container" src={ yearsofdesign } alt="33 слова" />
                 <div className="movies-list__title-container">
                     <p className="movies-list__title">Киноальманах «100 лет дизайна» </p>
                     <p className="movies-list__duration-button">1ч 17м</p>
@@ -79,7 +79,7 @@ function MovieCard() {
                 )}
             </div>
             <div className="movies-list__container">
-                <img className="movies-list__image-container" src={ baskiya } alt="33 Words" />
+                <img className="movies-list__image-container" src={ baskiya } alt="33 слова" />
                 <div className="movies-list__title-container">
                     <p className="movies-list__title">Баския: Взрыв реальности</p>
                     <p className="movies-list__duration-button">1ч 17м</p>
@@ -96,7 +96,7 @@ function MovieCard() {
                 )}
             </div>
             <div className="movies-list__container">
-                <img className="movies-list__image-container" src={ running } alt="33 Words" />
+                <img className="movies-list__image-container" src={ running } alt="33 слова" />
                 <div className="movies-list__title-container">
                     <p className="movies-list__title">Бег это свобода</p>
                     <p className="movies-list__duration-button">1ч 17м</p>
@@ -113,7 +113,7 @@ function MovieCard() {
                 )}
             </div>
             <div className="movies-list__container">
-                <img className="movies-list__image-container" src={ booksellers } alt="33 Words" />
+                <img className="movies-list__image-container" src={ booksellers } alt="33 слова" />
                 <div className="movies-list__title-container">
                     <p className="movies-list__title">Книготорговцы</p>
                     <p className="movies-list__duration-button">1ч 17м</p>
@@ -130,7 +130,7 @@ function MovieCard() {
                 )}
             </div>
             <div className="movies-list__container">
-                <img className="movies-list__image-container" src={ germany } alt="33 Words" />
+                <img className="movies-list__image-container" src={ germany } alt="33 слова" />
                 <div className="movies-list__title-container">
                     <p className="movies-list__title">Когда я думаю о Германии ночью</p>
                     <p className="movies-list__duration-button">1ч 17м</p>
@@ -147,7 +147,7 @@ function MovieCard() {
                 )}
             </div>
             <div className="movies-list__container">
-                <img className="movies-list__image-container" src={ gimme } alt="33 Words" />
+                <img className="movies-list__image-container" src={ gimme } alt="33 слова" />
                 <div className="movies-list__title-container">
                     <p className="movies-list__title">Gimme Danger: История Игги и The Stooges</p>
                     <p className="movies-list__duration-button">1ч 17м</p>
@@ -164,7 +164,7 @@ function MovieCard() {
                 )}
             </div>
             <div className="movies-list__container">
-                <img className="movies-list__image-container" src={ genis } alt="33 Words" />
+                <img className="movies-list__image-container" src={ genis } alt="33 слова" />
                 <div className="movies-list__title-container">
                     <p className="movies-list__title">Дженис: Маленькая девочка грустит</p>
                     <p className="movies-list__duration-button">1ч 17м</p>
@@ -181,7 +181,7 @@ function MovieCard() {
                 )}
             </div>
             <div className="movies-list__container">
-                <img className="movies-list__image-container" src={ jump } alt="33 Words" />
+                <img className="movies-list__image-container" src={ jump } alt="33 слова" />
                 <div className="movies-list__title-container">
                     <p className="movies-list__title">Соберись перед прыжком</p>
                     <p className="movies-list__duration-button">1ч 17м</p>
@@ -198,7 +198,7 @@ function MovieCard() {
                 )}
             </div>
             <div className="movies-list__container">
-                <img className="movies-list__image-container" src={ pj } alt="33 Words" />
+                <img className="movies-list__image-container" src={ pj } alt="33 слова" />
                 <div className="movies-list__title-container">
                     <p className="movies-list__title">Пи Джей Харви: A dog called money</p>
                     <p className="movies-list__duration-button">1ч 17м</p>
@@ -215,7 +215,7 @@ function MovieCard() {
                 )}
             </div>
             <div className="movies-list__container">
-                <img className="movies-list__image-container" src={ waves } alt="33 Words" />
+                <img className="movies-list__image-container" src={ waves } alt="33 слова" />
                 <div className="movies-list__title-container">
                     <p className="movies-list__title">По волнам: Искусство звука в кино</p>
                     <p className="movies-list__duration-button">1ч 17м</p>

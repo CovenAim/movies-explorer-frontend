@@ -16,7 +16,7 @@ function Navigation({ onClose }) {
                     <a href="/movies" className="main-navigation__link main-navigation__link--movies">Фильмы</a>
                     <a href="/saved-movies" className="main-navigation__link main-navigation__link--saved-movies">Сохранённые фильмы</a>
                     <button className="main-navigation__button">
-                        <img src={otherLogoAcc} className="header__logo-account" alt="Account Logo" />
+                        <img src={otherLogoAcc} className="header__logo-account" alt="Лого аккаунта" />
                         </button>
                 </div>
             </div>
