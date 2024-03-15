@@ -71,7 +71,11 @@
         width: 30px;
         height: 3px;
         background-color: #000000;
-        transition: all 0.3s ease 0s;
+        transition: opacity 0.3s ease;
+      }
+
+      .main-navigation__close span:hover {
+        opacity: 0.9;
       }
     
     .main-menu-container {
@@ -84,8 +88,8 @@
     }
     
     .main-navigation__link {
-        display: inline-block; /* Добавляем inline-block */
-        position: relative; /* Добавляем позиционирование для псевдоэлемента */
+        display: inline-block;
+        position: relative;
         font: 500 18px Inter, Arial, sans-serif;
         text-decoration: none;
         padding: 0;
@@ -95,24 +99,19 @@
         content: '';
         position: absolute;
         left: 0;
-        bottom: -3px; /* Смещение от текста */
-        display: inline; /* Добавляем inline */
+        bottom: -3px;
+        display: inline;
         width: 100%;
-        height: 2px; /* Толщина линии */
-        background-color: #000; /* Цвет линии */
-        transition: opacity 0.3s; /* Добавляем плавное появление */
-        opacity: 0; /* Начальная непрозрачность */
+        height: 2px;
+        background-color: #000;
+        transition: opacity 0.3s;
+        opacity: 0;
       }
       
       .main-navigation__link:hover::after,
       .main-navigation__link:focus::after {
-        opacity: 1; /* Проявляем линию при наведении или фокусировке */
+        opacity: 1;
       }
-      
-
-    /* .main-navigation__link:hover {
-        text-decoration: underline;
-    } */
     
     .main-navigation__link--home {
         margin-top: 0;

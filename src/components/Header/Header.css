@@ -40,9 +40,10 @@
 
 .header__registration-title {
   flex: 0 0 auto;
+  padding: 0;
   font-weight: 500;
   font-size: 12px;
-  font-family: "Inter";
+  font-family: "Inter", "Arial", "sans-serif";
   color: #000000;
   white-space: pre-wrap;
   border: none;
@@ -56,7 +57,7 @@
   border-radius: 3px;
   font-weight: 400;
   font-size: 12px;
-  font-family: "Inter";
+  font-family: "Inter", "Arial", "sans-serif";
   background: #000;
   box-sizing: border-box;
   display: block;
@@ -72,7 +73,7 @@
     display: flex;
     flex: 0 0 auto;
     flex-direction: row;
-    gap: 51px;
+    gap: 47px;
     align-items: center;
     justify-content: flex-start; 
 }
@@ -95,7 +96,7 @@
 
 .header__movie-link_saved {
   flex: 0 0 auto;
-  margin-left: 19px;
+  margin-left: 21px;
   font: 400 14px Inter, Arial, sans-serif;
   color: #000;
   white-space: pre-wrap;
@@ -135,7 +136,7 @@
 
 @media (max-width: 780px) {
   .header {
-    padding: 17px 31px 18px 31px;
+    padding: 15px 31px 20px 31px;
     max-width: 780px;
   }
 
@@ -151,14 +152,18 @@
     cursor: pointer;
   }
 
+  .header-mobile__burger:hover {
+    opacity: 0.6;
+  }
+
   .header-mobile__burger span {
     display: inline-block;
     width: 30px;
     height: 3px;
     background-color: #000000;
-    transition: all 0.3s ease 0s;
+    transition: opacity 0.3s ease;
   }
-
+  
   .header-mobile__burger span:first-child {
     transform: translateY(-8px);
   }
@@ -197,6 +202,14 @@
   .header__registration-title {
     font-size: 10px;
   }
+
+  /* .header-mobile__burger span {
+    transition: opacity 0.3s ease;
+  }
+  
+  .header-mobile__burger span:hover {
+    opacity: 0.9;
+  } */
 }
 
 @media (max-width: 340px) {
@@ -213,8 +226,11 @@
     margin-left: 9px;
   }
 
-  .header-mobile__burger span {
-    width: 25px;
-    height: 2.5px;
+  /* .header-mobile__burger span {
+    transition: opacity 0.3s ease;
   }
+  
+  .header-mobile__burger span:hover {
+    opacity: 0.9;
+  } */
 }

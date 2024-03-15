@@ -5,8 +5,8 @@
     align-items: stretch;
     align-self: stretch;
     justify-content: flex-start;
-    padding-right: 70px;
-    padding-left: 70px;
+    padding-right: 73px;
+    padding-left: 73px;
     padding-bottom: 98px;
     margin: 0 0 0;
     background:#FFFFFF;
@@ -26,7 +26,7 @@
     color: #000000;
     letter-spacing: -0.88px;
     white-space: pre-wrap;
-    margin-top: 111px;
+    margin-top: 110px;
     margin-bottom: 0px;
 }
 
@@ -35,7 +35,7 @@
     flex: 0 0 auto;
     width: 1140px;
     height: 1px;
-    margin-top: 23px;
+    margin-top: 24px;
     background: #000000;
 }
 
@@ -84,7 +84,7 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 0 0 95px;
+    margin: 0 0 97px 0px;
 }
 
 .about-project__description-text {
@@ -121,7 +121,6 @@
 .about-project__flex-container {
     box-sizing: border-box;
     display: flex;
-    /* flex: 1 0 228px; */
     min-width: 228px;
     flex-direction: column;
     align-items: stretch;
@@ -137,8 +136,6 @@
     justify-content: center;
     height: 36px;
     max-width: 228px;
-    /* padding-right: 14px;
-    padding-left: 14px; */
     background: #000000;
 }
 
@@ -221,13 +218,8 @@
     
 
     .about-project__weeks-container {
-        /* max-width: 528px; */
         padding: 0;
     }
-/* 
-    .about-project__flex-container-large {
-        max-width: 528px;
-    } */
 
     .about-project__header-title {
         margin-top: 91px;
@@ -244,6 +236,7 @@
     .about-project__details {
         padding-right: 50px;
         padding-left: 50px;
+        padding-bottom: 78px;
     }
 
     .about-project__details-duration {
@@ -309,7 +302,7 @@
         font-size: 18px;
         letter-spacing: 4%;
         width: 100%;
-        margin-bottom: 16px;
+        margin-bottom: 17px;
     }
 
     .about-project__description-text {
@@ -324,7 +317,7 @@
         width: 100%;
         padding: 0;
         margin-top: 0px;
-        margin-bottom: 16px;
+        margin-bottom: 17px;
     }
 
     .about-project__description-notes {
@@ -349,7 +342,6 @@
 
     .about-project__week-container {
         max-width: 140px;
-        margin-top: 3px;
     }
 
     .about-project__backend-title {
@@ -364,7 +356,7 @@
 
 @media (max-width: 340px) {
     .about-project__details {
-        margin: 73px 18px 52px 18px;
+        margin: 72px 18px 68px 18px;
         padding: 0;
     }
 
@@ -373,13 +365,13 @@
     }
 
     .about-project__details-content {
-        margin-top: 46px;
+        margin-top: 44px;
     }
 
     .about-project__description-text {
         margin-top: 0px;
-        margin-bottom: 59px;
-        line-height: 1.3;
+        margin-bottom: 57px;
+        line-height: 16px;
     }
 
     .about-project__description-notes {
@@ -397,11 +389,11 @@
 
     .about-project__week-container {
         max-width: 100px;
-        margin-top: 3px;
     }
 
     .about-project__backend-title {
         max-width: 100px;
+        margin-top: 11px;
     }
 
     .about-project__weeks-container {
@@ -411,5 +403,23 @@
 
     .about-project__flex-container-large {
         min-width: 184px;
+    }
+
+    .about-project__week-text {
+        font: 400 11px Inter, Arial, sans-serif;
+    }
+
+    .about-project__weeks-duration {
+        font: 400 11px Inter, Arial, sans-serif;
+        margin-top: 11px;
+        margin-bottom: 11px;
+    }
+
+    .about-project__weeks-text {
+        margin-top: 11px;
+    }
+
+    .about-project__header-title {
+        letter-spacing: -0.88px;
     }
 }

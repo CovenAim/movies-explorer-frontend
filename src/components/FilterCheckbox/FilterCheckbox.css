@@ -21,7 +21,7 @@
 }
 
 @media (max-width: 780px) {
-    .filter-checkbox{
+    .filter-checkbox {
         padding-right: 0px;
         margin-right: 40px;
         padding-bottom: 7px;
@@ -36,6 +36,42 @@
 @media (max-width: 740px) {
     .filter-checkbox {
         margin: 47px 0 0;
+    }
+}
+
+@media (max-width: 715px) {
+    .filter-checkbox {
+        position: absolute;
+        top: 62px;
+        right: 60px;
+    }
+
+    .filter-checkbox__label {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 670px) {
+    .filter-checkbox {
+        right: 260px;
+    }
+}
+
+@media (max-width: 580px) {
+    .filter-checkbox {
+        right: 220px;
+    }
+}
+
+@media (max-width: 520px) {
+    .filter-checkbox {
+        right: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter-checkbox {
+        right: 20px;
     }
 }
 

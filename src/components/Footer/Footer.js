@@ -18,10 +18,10 @@ function Footer() {
         <div className="horizontal-divider" />
       </div>
       <div className="footer">
-        <p className="yandex-praktikum-text">© 2024</p>
+        <p className="yandex-praktikum-date">© 2024</p>
         <div className="project-details3">
-          <a href="https://practicum.yandex.ru/" className="yandex-praktikum-text">Яндекс.Практикум</a>
-          <a href="https://github.com/CovenAim/" className="yandex-praktikum-github">Github</a>
+          <a href="https://practicum.yandex.ru/" target="_blank" rel="noreferrer" className="yandex-praktikum-text">Яндекс.Практикум</a>
+          <a href="https://github.com/CovenAim/" target="_blank" rel="noreferrer" className="yandex-praktikum-github">Github</a>
         </div>
       </div>
     </footer>
