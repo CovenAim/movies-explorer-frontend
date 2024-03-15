@@ -1,3 +1,4 @@
+import React from 'react';
 import "../Profile/Profile.css"
 
 function Profile() {
