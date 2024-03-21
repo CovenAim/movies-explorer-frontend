@@ -7,7 +7,7 @@
   margin: 74px 365px 70px;
 }
 
-.greeting-heading {
+.profile-card__greeting {
   flex: 0 0 auto;
   font: 500 24px Inter, Arial, sans-serif;
   color: #000000;
@@ -15,10 +15,11 @@
   margin: 0;
 }
 
-.user-profile {
+.profile-card__user-profile {
   display: flex;
   flex: 0 0 auto;
-  width: 410px;
+  max-width: 410px;
+  width: 100%;
   flex-direction: column;
   align-items: stretch;
   align-self: stretch;
@@ -26,7 +27,7 @@
   margin: 112px auto 0 auto;
 }
 
-.personal-info-container {
+.profile-card__personal-info-container {
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
@@ -35,7 +36,7 @@
   justify-content: flex-start;
 }
 
-.info-card-name, .info-card-mail {
+.profile-card__info-card-name, .profile-card__info-card-mail {
   display: flex;
   flex: 0 0 auto;
   flex-direction: row;
@@ -45,37 +46,84 @@
   position: relative;
 }
 
-.info-card-name::after {
+.profile-card__info-card-name.focused,
+.profile-card__info-card-mail.focused {
+  outline: 2px solid #e39923;
+  border-radius: 3px;
+}
+
+.profile-card__info-card-name::after {
   content: '';
   display: block;
   width: 100%;
   height: 1px;
-  background: #000000;
+  background: #E8E8E8;
   margin-top: 50px;
   position: absolute;
 }
 
-.name-text {
-  flex: 0 0 auto;
+.profile-card__error {
+  font: 400 12px Inter, Arial, sans-serif;
+  position: absolute;
+  top: 170px;
+  left: 150px;
+  color: #FF4062;
+}
+
+.profile-card__name-text {
   font: 500 11px Inter, Arial, sans-serif;
   color: #000000;
   white-space: pre-wrap;
+  margin: 11px 0;
 }
 
-.name-paragraph {
-  flex: 0 0 auto;
+.profile-card__name-paragraph {
   font: 400 11px Inter, Arial, sans-serif;
   color: #000000;
   white-space: pre-wrap;
+  margin: 11px 0;
 }
 
-.account-actions {
+.profile-card__input {
+  font: 400 11px Inter, Arial, sans-serif;
+  outline: none;
+  white-space: pre-wrap;
+  border: none;
+  text-align: end;
+}
+
+.profile-card__input::placeholder {
+  color: #000000;
+  justify-content: end;
+}
+
+.profile-card__account-actions {
   display: flex;
   flex: 0 0 auto;
   flex-direction: column;
   align-items: stretch;
   justify-content: flex-start;
   margin-top: 209px;
+}
+
+.profile-card__save-button {
+  font: 400 14px Inter, Arial, sans-serif;
+  height: 45px;
+  border-radius: 3px;
+  background: #3456F3;
+  border: none;
+}
+
+.profile-card__edit-button {
+  font: 400 13px Inter, Arial, sans-serif;
+  border: none;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.profile-card__account-logout {
+  display: flex;
+  justify-content: center;
 }
 
 .edit-button {
@@ -87,7 +135,7 @@
   text-decoration: none;
 }
 
-.logout-button {
+.profile-card__logout-button {
   flex: 0 0 auto;
   margin-top: 16px;
   font: 500 13px Inter, Arial, sans-serif;
@@ -97,57 +145,83 @@
   text-decoration: none;
 }
 
-@media (max-width: 980px) {
+
+@media (min-width: 980px) and (max-width: 1280px) {
   .profile-card {
-      margin: 212px 179px 0;
+    margin: 74px 179px 0;
   }
 
-  .greeting-heading {
-      font-size: 24px;
-  }
-
-  .account-actions {
-      margin-top: 200px;
-  }
-
-  .user-profile {
-      margin-top: 72px;
+  .profile-card__user-profile {
+    width: 410px;
   }
 }
 
 @media (max-width: 980px) {
   .profile-card {
-      margin: 232px 179px 0;
+      margin: 230px 179px 0;
   }
 
-  .greeting-heading {
+  .profile-card__greeting {
       font-size: 24px;
   }
 
-  .account-actions {
+  .profile-card__account-actions {
       margin-top: 200px;
   }
 
-  .user-profile {
-      margin-top: 84px;
+  .profile-card__user-profile {
+      margin-top: 86px;
+      width: 410px;
+  }
+
+    .profile-card__edit-button {
+      font: 400 12px Inter, Arial, sans-serif;
   }
 }
+
 
 @media (max-width: 740px) {
   .profile-card {
       margin: 70px 30px 0;
   }
 
-  .greeting-heading {
+  .profile-card__greeting {
       margin: 0;
   }
 
-  .user-profile {
+  .profile-card__user-profile{
       margin-top: 80px;
   }
 
-  .account-actions {
+  .profile-card__account-actions{
       margin: 379px auto 40px;
+  }
+
+  .profile-card__save-button {
+    width: 360px;
+  }
+
+  .profile-card__error {
+    top: 340px;
+  }
+}
+
+@media (max-width: 450px) {
+  .profile-card__save-button {
+    width: 290px;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 500px) {
+  .profile-card__error {
+    top: 340px;
+    left: 130px;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 475px) {
+  .profile-card__user-profile {
+    width: 100%;
   }
 }
 
@@ -156,24 +230,33 @@
       margin: 70px 30px 0;
   }
 
-  .greeting-heading {
+  .profile-card__greeting {
       margin: 0;
   }
 
-  .user-profile {
+  .profile-card__user-profile{
       margin-top: 69px;
       width: 260px;
   }
 
-  .account-actions {
-      margin: 367px auto 40px;
+  .profile-card__account-actions {
+      margin: 368px auto 0px;
   }
 
   .edit-button {
     font-size: 12px;
   }
 
-  .logout-button{
+  .profile-card__save-button {
+    width: 260px;
+  }
+
+  .profile-card__logout-button {
     font-size: 12px;
+  }
+
+  .profile-card__error {
+    top: 340px;
+    left: 70px;
   }
 }

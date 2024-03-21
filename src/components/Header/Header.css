@@ -94,7 +94,7 @@
   text-decoration: none;
 }
 
-.header__movie-link_saved {
+.header__movie-link-saved {
   flex: 0 0 auto;
   margin-left: 21px;
   font: 400 14px Inter, Arial, sans-serif;
@@ -124,7 +124,7 @@
   background: #FFFFFF;
 }
 
-.header-mobile__burger {
+.header__burger-menu {
   display: none;
 }
 
@@ -140,7 +140,7 @@
     max-width: 780px;
   }
 
-  .header-mobile__burger {
+  .header__burger-menu {
     width: 44px;
     height: 44px;
     display: flex;
@@ -150,37 +150,38 @@
     position: relative;
     z-index: 2;
     cursor: pointer;
+    margin-right: -2px;
   }
 
-  .header-mobile__burger:hover {
+  .header__burger-menu:hover {
     opacity: 0.6;
   }
 
-  .header-mobile__burger span {
+  .header__burger-menu span {
     display: inline-block;
-    width: 30px;
+    width: 28px;
     height: 3px;
     background-color: #000000;
     transition: opacity 0.3s ease;
   }
   
-  .header-mobile__burger span:first-child {
-    transform: translateY(-8px);
+  .header__burger-menu span:first-child {
+    transform: translateY(-7px);
   }
   
-  .header-mobile__burger span:last-child {
-    transform: translateY(8px);
+  .header__burger-menu span:last-child {
+    transform: translateY(7px);
   }
   
-  .header-mobile__burger.active span {
+  .header__burger-menu.active span {
     transform: scale(0);
   }
   
-  .header-mobile__burger.active span:first-child {
+  .header__burger-menu.active span:first-child {
     transform: translateY(3px) rotate(45deg);
   }
   
-  .header-mobile__burger.active span:last-child {
+  .header__burger-menu.active span:last-child {
     transform: translateY(-3px) rotate(-45deg);
   }
 
@@ -202,14 +203,6 @@
   .header__registration-title {
     font-size: 10px;
   }
-
-  /* .header-mobile__burger span {
-    transition: opacity 0.3s ease;
-  }
-  
-  .header-mobile__burger span:hover {
-    opacity: 0.9;
-  } */
 }
 
 @media (max-width: 340px) {
@@ -220,17 +213,25 @@
     padding: 17px 17px 15px 14px;
   }
 
-  .header-mobile__burger {
+  .header__burger-menu {
     width: 40px;
     height: 43px;
-    margin-left: 9px;
+    margin-right: -3px;
   }
 
-  /* .header-mobile__burger span {
+  .header__burger-menu span {
+    display: inline-block;
+    width: 22px;
+    height: 2.7px;
+    background-color: #000000;
     transition: opacity 0.3s ease;
   }
+
+  .header__burger-menu span:first-child {
+    transform: translateY(-6px);
+  }
   
-  .header-mobile__burger span:hover {
-    opacity: 0.9;
-  } */
+  .header__burger-menu span:last-child {
+    transform: translateY(6px);
+  }
 }

@@ -1,22 +1,23 @@
-import React from 'react';
+import React from "react";
 import "../Promo/Promo.css";
 import NavTab from "../NavTab/NavTab";
-import landingLogo from "../../images/landing-logo.svg"
-
+import landingLogo from "../../images/landing-logo.svg";
 
 function Promo() {
   return (
-    <div className="student-main-page">
+    <section className="promo-main-page">
       <div className="promo-info">
-      <img
-                      src={ landingLogo }
-                      className="search-form__icon-landing"
-                      alt="Лого"
-                  />
-        <p className="promo-info__title">Учебный проект студента факультета Веб-разработки.</p>
+        <img
+          src={landingLogo}
+          className="promo-info__icon-landing"
+          alt="Лого"
+        />
+        <p className="promo-info__title">
+          Учебный проект студента факультета Веб-разработки.
+        </p>
         <NavTab />
       </div>
-    </div>
+    </section>
   );
 }
-export default Promo
+export default Promo;

@@ -1,4 +1,4 @@
-.student-main-page {
+.promo-main-page {
     flex: 0 0 auto;
     align-self: stretch;
 }
@@ -26,9 +26,14 @@
     margin-bottom: 70px;
 }
 
+.promo-info__icon-landing {
+  position: absolute;
+  top: 155px;
+}
+
 
 @media (max-width: 1270px) {
-  .student-main-page {
+  .promo-main-page {
     width: 100%;
   }
 }
@@ -45,7 +50,7 @@
     padding: 0px;
   }
 
-  .student-main-page {
+  .promo-main-page {
     padding: 0px;
   }
 
@@ -55,13 +60,13 @@
     font-size: 50px;
   }
 
-  .search-form__icon-landing {
+  .promo-info__icon-landing {
     margin-top: 145px;
   }
 }
 
 @media (max-width: 740px) {
-  .student-main-page {
+  .promo-main-page {
     margin: 0;
   }
 
@@ -78,19 +83,21 @@
     padding-top: 0;
   }
 
-  .search-form__icon-landing {
-    margin-top: 5px;
+  .promo-info__icon-landing {
+    margin-top: 0px;
   }
 }
 
 @media (max-width: 500px) {
-  .search-form__icon-landing {
+  .promo-info__icon-landing {
     margin: 0px;
   }
 }
 
 @media (max-width: 340px) {
-  .search-form__icon-landing {
+  .promo-info__icon-landing {
     margin: 0px;
+    width: 248px;
+    top: 217px;
   }
 }

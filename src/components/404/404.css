@@ -4,7 +4,7 @@
     background: #FFFFFF;
 }
 
-.error-container {
+.page-not-found__error-container {
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
@@ -22,7 +22,7 @@
     margin: 0;
 }
 
-.error-message {
+.page-not-found__error-message {
     flex: 0 0 auto;
     margin-top: 2px;
     font: 400 16px Inter, Arial, sans-serif;
@@ -31,7 +31,7 @@
     white-space: pre-wrap;
 }
 
-.back-button {
+.page-not-found__back-button {
     margin: 168px auto 0;
     font: 400 14px Inter, Arial, sans-serif;
     color: #000000;
@@ -55,13 +55,13 @@
         font-size: 80px;
     }
 
-    .error-message {
+    .page-not-found__error-message {
         font-size: 12px;
         margin-top: 10px;
         margin-bottom: 284px;
     }
 
-    .back-button {
+    .page-not-found__back-button {
         margin: 0 auto 30px;
     }
 }

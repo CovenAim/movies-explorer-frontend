@@ -63,7 +63,7 @@
     border: none;
     border-radius: 30px;
     position: absolute;
-    top: 14px;
+    top: 13px;
     right: -11px;
     background: transparent;
 }
@@ -88,11 +88,21 @@
 
 @media (max-width: 780px) {
     .movies-list__title-container {
-        margin-top: 12px;
+        margin-top: 12.5px;
     }
 
     .movies-list__title {
         margin-left: 0;
+    }
+
+    .movies-list__duration-button {
+        font-size: 11px;
+        margin: 10px 0 0 0;
+    }
+
+    .movies-list__save-button__active {
+        top: 13px;
+        right: -11px;
     }
 
 }
@@ -109,6 +119,10 @@
         max-width: 240px;
         margin-left: 0;
         margin-top: 0;
+    }
+
+    .movies-list__title-container {
+        margin-top: 16px;
     }
 
     .movies-list__duration-button {
@@ -128,5 +142,15 @@
 @media (max-width: 330px) {
     .movies-list__container {
         margin: 0;
+    }
+
+    .movies-list__save-button__active {
+        top: 9px;
+        left: 243px;
+        right: 0;
+    }
+
+    .movies-list__title-container {
+        margin-top: 16px;
     }
 }

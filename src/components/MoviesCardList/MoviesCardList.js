@@ -1,17 +1,16 @@
-import React from 'react';
+import React from "react";
 import MovieCard from "../MoviesCard/MovieCard";
 import "../MoviesCardList/MoviesCardList.css";
 
 function MoviesCardList() {
-    return (
-        <>
-      <div className="movies-list">
+  return (
+    <>
+      <section className="movies-list">
         <MovieCard />
-      </div>
-        <button className="movies-list__more-button">Ещё</button>
-        </>
-    );
-  }
-  
-  export default MoviesCardList;
-  
+      </section>
+      <button className="movies-list-more-button">Ещё</button>
+    </>
+  );
+}
+
+export default MoviesCardList;

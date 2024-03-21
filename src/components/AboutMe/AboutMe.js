@@ -5,12 +5,12 @@ import Portfolio from "../Portfolio/Portfolio";
 
 function AboutMe() {
     return (
-      <div className="about-me">
+      <section className="about-me">
         <div className="about-me__header">
           <p id="student" className="about-me__title">Студент</p>
           <div className="about-me__divider" />
         </div>
-        <div className="about-me__info">
+        <article className="about-me__info">
           <div className="about-me__details">
             <p className="about-me__name">Александр</p>
             <div className="about-me__bio">
@@ -24,9 +24,9 @@ function AboutMe() {
           
             <img src={me} className="about-me__image" alt="Мое фото" />
           
-        </div>
+        </article>
         <Portfolio />
-      </div>
+      </section>
     );
   }
 

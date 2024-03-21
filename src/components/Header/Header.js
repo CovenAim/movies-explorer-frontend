@@ -10,15 +10,25 @@ function Header() {
   const [isMoviesPage, setIsMoviesPage] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(false);
   const location = useLocation();
-  const shouldRenderHeader = ["/", "/movies", "/saved-movies", "/profile"].includes(location.pathname);
+  const shouldRenderHeader = [
+    "/",
+    "/movies",
+    "/saved-movies",
+    "/profile",
+  ].includes(location.pathname);
   const isMainPage = location.pathname === "/";
 
   useEffect(() => {
-    setIsMoviesPage(location.pathname === "/movies" || location.pathname === "/saved-movies" || location.pathname === "/profile");
+    setIsMoviesPage(
+      location.pathname === "/movies" ||
+        location.pathname === "/saved-movies" ||
+        location.pathname === "/profile"
+    );
   }, [location]);
 
   const toggleNav = () => {
     setIsNavVisible(!isNavVisible);
+    document.body.classList.toggle("overlay-visible");
   };
 
   if (!shouldRenderHeader) {
@@ -26,47 +36,67 @@ function Header() {
   }
 
   return (
-    <header className={`header ${isMainPage ? "main-page-header" : ""}`}>
-      <div className="header__logo">
-        <Link to="/">
-          <img src={logo} className="header__logo-image" alt="Лого" />
-        </Link>
-      </div>
-      {shouldRenderHeader && (
-        <>
-          {isMoviesPage ? (
-            <div className="header__movie-nav">
-              <div className="header__movie-links">
-                <Link to="/movies" className="header__movie-link">Фильмы</Link>
-                <Link to="/saved-movies" className="header__movie-link_saved">Сохранённые фильмы</Link>
+    <>
+      <header className={`header ${isMainPage ? "main-page-header" : ""}`}>
+        <div className="header__logo">
+          <Link to="/">
+            <img src={logo} className="header__logo-image" alt="Лого" />
+          </Link>
+        </div>
+        {shouldRenderHeader && (
+          <>
+            {isMoviesPage ? (
+              <div className="header__movie-nav">
+                <div className="header__movie-links">
+                  <Link to="/movies" className="header__movie-link">
+                    Фильмы
+                  </Link>
+                  <Link to="/saved-movies" className="header__movie-link-saved">
+                    Сохранённые фильмы
+                  </Link>
+                </div>
+                <Link to="/profile" className="header__profile-link">
+                  <button className="header__profile-button">
+                    <img
+                      src={isMainPage ? logoAcc : otherLogoAcc}
+                      className="header__logo-account"
+                      alt="Лого аккаунт"
+                    />
+                  </button>
+                </Link>
               </div>
-              <Link to="/profile" className="header__profile-link">
-                <button className="header__profile-button">
-                  <img src={isMainPage ? logoAcc : otherLogoAcc} className="header__logo-account" alt="Лого аккаунт" />
-                </button>
-              </Link>
+            ) : (
+              <div className="header__registration">
+                <Link to="/signup">
+                  <button className="header__registration-title">
+                    Регистрация
+                  </button>
+                </Link>
+                <Link to="signin" className="header__link">
+                  <button className="header__registration-button">Войти</button>
+                </Link>
+              </div>
+            )}
+            <div className="header__burger-menu" onClick={toggleNav}>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-          ) : (
-            <div className="header__registration">
-              <Link to="/signup">
-                <button className="header__registration-title">Регистрация</button>
-              </Link>
-              <Link to="signin" className="header__link" >
-                <button className="header__registration-button">Войти</button>
-              </Link>
+            <div
+              className={`main-navigation-container ${
+                isNavVisible ? "is-visible" : ""
+              }`}
+            >
+              {isNavVisible && <Navigation onClose={toggleNav} />}
             </div>
-          )}
-          <div className="header-mobile__burger" onClick={toggleNav}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <div className={`main-navigation-container ${isNavVisible ? "is-visible" : ""}`}>
-            {isNavVisible && <Navigation onClose={toggleNav} />}
-          </div>
-        </>
-      )}
-    </header>
+            <div
+              className={`overlay ${isNavVisible ? "is-visible" : ""}`}
+            ></div>
+          </>
+        )}
+      </header>
+      <div className="overlay"></div>
+    </>
   );
 }
 

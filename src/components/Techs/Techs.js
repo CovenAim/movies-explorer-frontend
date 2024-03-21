@@ -3,7 +3,7 @@ import "../Techs/Techs.css";
 
 function Techs() {
   return (
-    <div className="techs">
+    <section className="techs">
       <div className="techs__header">
         <p id="technology" className="techs__header-title">Технологии</p>
         <div className="techs__line" />
@@ -24,7 +24,7 @@ function Techs() {
         <button className="techs__button">Express.js</button>
         <button className="techs__button">mongoDB</button>
       </div>
-    </div>
+    </section>
   );
 }
 

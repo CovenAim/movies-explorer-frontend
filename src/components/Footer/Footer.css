@@ -1,4 +1,4 @@
-.project-info {
+.footer {
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
@@ -9,7 +9,7 @@
     padding-top: 79px;
     background: #FFFFFF;
   }
-  .footer {
+  .footer__details {
     display: flex;
     flex: 0 0 auto;
     flex-direction: row;
@@ -27,14 +27,14 @@
     text-decoration: none;
   }
 
-  .yandex-praktikum-date {
+  .footer__year {
     flex: 0 0 auto;
     font: 400 13px Inter, Arial, sans-serif;
     color: #000000;
     white-space: pre-wrap;
     text-decoration: none;
   }
-  .project-details3 {
+  .footer__links {
     display: flex;
     flex: 0 0 auto;
     flex-direction: row;
@@ -50,14 +50,14 @@
     text-decoration: none;
   }
 
-  .project-description {
+  .footer-description {
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
   }
-  .project-description-text {
+  .footer-description-text {
     flex: 0 0 auto;
     font: 400 13px Inter, Arial, sans-serif;
     color: #A0A0A0;
@@ -74,107 +74,115 @@
     background: #E8E8E8;
   }
   
-  @media (max-width: 780px) {
-    .footer {
-      margin-top: 8px;
-    }
-
-    .project-info {
-      padding: 0 31px 8px 31px;
-
-    }
-
-    .project-description-text {
-      margin-top: 102px;
-      margin-bottom: 19px;
-    }
-  }
-  
-  @media (max-width: 740px) {
-    .footer {
-      margin: 79px 10px 0;
-      padding: 0;
-    }
-  
-    .footer__text {
-      font-size: 12px;
-    }
-  
-    .footer__details {
-      display: grid;
-      grid-template-columns: 1fr;
-      margin: 30px auto;
-      justify-content: center;
-    }
-  
-    .footer__links {
-      display: grid;
-    }
-  
-    .footer__link, .footer__link-github, .footer__year {
-      font-size: 12px;
-    }
-  
-    .footer__link {
-      padding-bottom: 12px;
-    }
-  
-    .footer__link:first-child {
-      order: 1;
-    }
-  
-    .footer__link-github {
-      order: 2;
-      margin: 0 auto;
-      padding: 0;
-    }
-  
-    .footer__year {
-      order: 3;
-      margin: 30px auto 20px;
-    }
+@media (max-width: 780px) {
+  .footer {
+    margin: 85px 29px 0;
+    padding: 0;
   }
 
-  @media (max-width: 340px) {
-    .project-info {
-      font-size: 12px;
-      padding: 69px 10px 20px 10px;
-    }
-
-    .footer {
-      flex-direction: column-reverse;
-      margin-top: 12px;
-    }
-
-    .project-details3 {
-      flex-direction: column;
-    }
-
-    .yandex-praktikum-text {
-      font-size: 11px;
-    }
-
-    .yandex-praktikum-date {
-      font-size: 11px;
-    }
-
-    .yandex-praktikum-github {
-      font-size: 12px;
-      margin: 12px 2px 0 0;
-    }
-
-    .yandex-praktikum-text {
-      margin: 16px 2px 0 0;
-      font: 400 12px Inter, Arial, sans-serif;
-    }
-
-    .yandex-praktikum-date {
-      margin: 22px 4px 0 0;
-      font: 400 12px Inter, Arial, sans-serif;
-    }
-
-    .project-description-text {
-      font: 400 12px Inter, Arial, sans-serif;
-      margin-top: 82px;
-    }
+  .footer-description-text {
+    margin-top: 16px;
+    margin-bottom: 21px;
   }
+
+  .footer__details {
+    margin-top: 7px;
+  }
+
+  .footer__year {
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: 740px) {
+  .footer {
+    margin: 130px 10px 0;
+    padding: 0;
+  }
+
+  .footer__text {
+    font-size: 12px;
+  }
+
+  .footer__details {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px auto;
+    justify-content: center;
+  }
+
+  .footer__links {
+    display: grid;
+  }
+
+  .footer__link, .footer__link-github, .footer__year {
+    font-size: 12px;
+  }
+
+  .footer__link {
+    padding-bottom: 12px;
+  }
+
+  .footer__link:first-child {
+    order: 1;
+  }
+
+  .footer__link-github {
+    order: 2;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .footer__year {
+    order: 3;
+    margin: 30px auto 20px;
+  }
+}
+
+@media (max-width: 730px) {
+  .footer-description-text {
+    font-size: 12px;
+    margin-bottom: 21px;
+  }
+
+  .yandex-praktikum-text {
+    font-size: 12px;
+  }
+
+  .yandex-praktikum-github {
+    margin-left: 35px;
+    margin-top: 14px;
+    font-size: 12px;
+  }
+
+  .footer__year {
+    margin-top: 20px;
+    margin-left: 34.5px;
+    font-size: 12px;
+  }
+  
+}
+
+@media (max-width: 340px) {
+  .footer-description-text {
+    font-size: 12px;
+    margin-bottom: 21px;
+  }
+
+  .yandex-praktikum-text {
+    font-size: 12px;
+  }
+
+  .yandex-praktikum-github {
+    margin-left: 35px;
+    margin-top: 14px;
+    font-size: 12px;
+  }
+
+  .footer__year {
+    margin-top: 20px;
+    margin-left: 34.5px;
+    font-size: 12px;
+  }
+  
+}

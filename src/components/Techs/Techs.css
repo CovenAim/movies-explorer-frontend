@@ -226,11 +226,23 @@
   }
 
   .techs__buttons {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-content: start;
+    margin-bottom: 50px;
+    gap: 9px;
+  }
+
+  .techs__button:nth-child(odd) {
+    justify-self: flex-end;
+  }
+
+  .techs__button:nth-child(even) {
+    justify-self: flex-start;
   }
 }
+
 
 @media (max-width: 340px) {
   .techs {

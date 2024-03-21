@@ -5,7 +5,7 @@ import logo from "../../images/logo.svg"
 
 function Login() {
     return (
-        <div className="login">
+        <section className="login">
             <Link to="/">
                 <img src={logo} className="login__logo" alt="Лого" />
             </Link>
@@ -33,7 +33,7 @@ function Login() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }
 
