@@ -1,0 +1,234 @@
+.main-navigation__button-link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-navigation-container {
+  display: none;
+}
+
+.main-navigation {
+  display: none;
+}
+
+.overlay  {
+    display: none;
+}
+
+@media (max-width: 780px) {
+  .main-navigation-container {
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 0.5s, opacity 0.3s linear;
+  }
+
+  .main-navigation-container.is-visible {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+  }
+
+  .main-navigation-container.is-visible + .overlay {
+    display: block;
+  }
+
+  .main-navigation {
+    display: grid;
+    justify-content: center;
+    background: #ffffff;
+    grid-template-columns: 1fr;
+    grid-row-gap: 28px;
+    margin: 0 0 0 249px;
+    padding-top: 161px;
+  }
+
+  .main-navigation__close {
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 22px;
+    margin-right: 22px;
+  }
+
+  .main-navigation__close span:first-child {
+    transform: translateY(0px) rotate(45deg);
+  }
+
+  .main-navigation__close span:last-child {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+
+  .main-navigation__close span {
+    display: inline-block;
+    width: 22px;
+    height: 3px;
+    background-color: #000000;
+    transition: opacity 0.3s ease;
+  }
+
+  .main-navigation__close span:hover {
+    opacity: 0.9;
+  }
+
+  .main-menu-container {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    justify-content: flex-start;
+  }
+
+  .main-navigation__link {
+    display: inline-block;
+    position: relative;
+    font: 500 18px Inter, Arial, sans-serif;
+    text-decoration: none;
+    padding: 0;
+  }
+
+  .main-navigation__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    display: inline;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transition: opacity 0.3s;
+    opacity: 0;
+  }
+
+  .main-navigation__link:hover::after,
+  .main-navigation__link:focus::after {
+    opacity: 1;
+  }
+  .main-navigation__link.active::after {
+    opacity: 1;
+  }
+
+  .main-navigation__link--home {
+    margin-top: 0;
+  }
+
+  .main-navigation__link--movies,
+  .main-navigation__link--saved-movies {
+    margin-top: 29px;
+  }
+
+  .saved-movies-title {
+    flex: 0 0 auto;
+    align-self: stretch;
+    margin-top: 22px;
+    font: 500 18px Inter, Arial, sans-serif;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    white-space: pre-wrap;
+  }
+
+  .main-navigation__button {
+    box-sizing: border-box;
+    display: block;
+    flex: 0 0 auto;
+    width: 100px;
+    min-width: 100px;
+    height: 32px;
+    margin: 621px 210px 90px;
+    font: 500 14px Inter, Arial, sans-serif;
+    color: #ffffff;
+    cursor: pointer;
+    background: #ffffff;
+    border: none;
+  }
+}
+
+@media (max-width: 780px) {
+  .main-navigation__close {
+    top: 15.4px;
+    right: 5px;
+  }
+}
+
+@media (max-width: 740px) {
+  .main-navigation {
+    margin: 0;
+    padding-top: 144px;
+    width: 100%;
+  }
+
+  .main-navigation__close {
+    top: 13px;
+    right: 13px;
+    margin-right: 0;
+    margin-top: 13px;
+  }
+
+  .main-navigation__link--movies,
+  .main-navigation__link--saved-movies {
+    margin-top: 24px;
+  }
+
+  .main-navigation__button {
+    margin: 444px auto 46px;
+  }
+
+  .main-menu-container {
+    height: 100%;
+    max-height: 780px;
+  }
+}
+
+@media (max-width: 340px) {
+  .main-navigation {
+    max-width: 320px;
+    padding-top: 145px;
+  }
+
+  .main-navigation__link--movies {
+    margin-top: 25px;
+  }
+
+  .main-navigation__link--saved-movies {
+    margin-top: 25px;
+  }
+
+  .main-navigation__button {
+    margin: 443px 120px 46px auto;
+  }
+
+  .main-navigation__close {
+    margin-top: 15px;
+    margin-right: 5px;
+  }
+
+  .main-navigation__close span {
+    width: 22px;
+    height: 3px;
+  }
+}
